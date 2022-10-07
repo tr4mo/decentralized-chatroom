@@ -24,7 +24,7 @@ def write():
     while True:
         message = f'{nickname}: {input("")}'
         client.send(message.encode('ascii'))
-        print ("\033[A                             \033[A") # this is used to clear top line
+        #print ("\033[A                             \033[A") # this is used to clear top line
 
 receive_thread = threading.Thread(target=receive)
 receive_thread.start()
